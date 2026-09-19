@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AT-generated RSS fixture</title>
+    <link>https://example.test/at-feed</link>
+    <description>Bluesky-shaped output remains ordinary RSS.</description>
+    <item>
+      <guid isPermaLink="false">at://did:plc:fixture/app.bsky.feed.post/3fixture</guid>
+      <title>AT post rendered as RSS</title>
+      <link>https://bsky.app/profile/did:plc:fixture/post/3fixture</link>
+      <description>Post text</description>
+      <author>did:plc:fixture</author>
+      <pubDate>Sat, 19 Sep 2026 13:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

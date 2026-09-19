@@ -1,0 +1,33 @@
+{
+  "$type": "me.lqdev.resourcegraph.temp.bundle",
+  "name": "Synthetic network",
+  "members": [
+    {
+      "position": 0,
+      "label": "Independent feed",
+      "resource": {
+        "$type": "me.lqdev.resourcegraph.temp.defs#syndicationRef",
+        "uri": "https://example.test/feeds/updates.atom",
+        "format": "atom"
+      }
+    },
+    {
+      "position": 1,
+      "label": "Subscribed bundle",
+      "resource": {
+        "$type": "me.lqdev.resourcegraph.temp.defs#bundleRef",
+        "uri": "at://did:plc:example123/me.lqdev.resourcegraph.temp.bundle/3jz7example",
+        "mode": "live",
+        "title": "A public bundle"
+      }
+    },
+    {
+      "position": 2,
+      "label": "AT publication",
+      "resource": {
+        "$type": "me.lqdev.resourcegraph.temp.defs#atRecordRef",
+        "uri": "at://did:plc:example123/site.standard.document/3jz7document"
+      }
+    }
+  ]
+}

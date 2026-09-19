@@ -1,0 +1,13 @@
+{
+  "$type": "me.lqdev.resourcegraph.temp.bundle",
+  "name": "Intentionally invalid fixture",
+  "members": [
+    {
+      "resource": {
+        "$type": "me.lqdev.resourcegraph.temp.defs#syndicationRef",
+        "uri": "https://example.test/feeds/missing-position.xml",
+        "format": "rss"
+      }
+    }
+  ]
+}

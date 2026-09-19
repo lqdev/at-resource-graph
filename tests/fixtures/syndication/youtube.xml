@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+      xmlns:media="http://search.yahoo.com/mrss/">
+  <id>https://www.youtube.com/feeds/videos.xml?channel_id=fixture</id>
+  <title>Fixture YouTube channel</title>
+  <entry>
+    <id>yt:video:fixture-video</id>
+    <yt:videoId>fixture-video</yt:videoId>
+    <title>Fixture video</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=fixture-video" />
+    <media:group>
+      <media:thumbnail url="https://i.ytimg.com/vi/fixture-video/hqdefault.jpg" />
+    </media:group>
+    <published>2026-09-19T13:00:00Z</published>
+    <updated>2026-09-19T13:01:00Z</updated>
+  </entry>
+</feed>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="alternate" type="application/rss+xml" href="https://example.test/feed.xml" title="RSS" />
+    <link rel="alternate" type="application/atom+xml" href="https://example.test/feed.atom" title="Atom" />
+    <link rel="alternate" type="text/x-opml" href="https://example.test/index.opml" />
+    <link rel="site.standard.document" href="at://did:plc:fixture/site.standard.document/3doc" />
+    <meta name="at:canonical" content="at://did:plc:fixture/site.standard.document/3doc" />
+    <meta name="at:alternate" content="at://did:plc:fixture/site.standard.publication/3pub" />
+    <meta name="at:author" content="at://did:plc:fixture/app.bsky.actor.profile/self" />
+    <meta name="at:me" content="at://did:plc:fixture/app.bsky.actor.profile/self" />
+    <meta property="og:url" content="https://example.test/ignored" />
+    <script>var decoy = '<link rel="alternate" type="application/rss+xml" href="https://example.test/script.xml">';</script>
+  </head>
+  <body>
+    <a href="https://example.test/body.xml">body link must be ignored</a>
+  </body>
+</html>

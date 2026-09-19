@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ResourceGraph.Core\ResourceGraph.Core.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.AtProto\ResourceGraph.AtProto.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.Bluesky\ResourceGraph.Bluesky.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.Syndication\ResourceGraph.Syndication.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.Discovery\ResourceGraph.Discovery.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.StandardSite\ResourceGraph.StandardSite.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.Composition\ResourceGraph.Composition.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.Opml\ResourceGraph.Opml.csproj" />
+    <ProjectReference Include="..\..\src\ResourceGraph.Reader\ResourceGraph.Reader.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

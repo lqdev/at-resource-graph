@@ -1,0 +1,6 @@
+{
+  "document": "at://did:plc:fixture/site.standard.document/3document",
+  "publication": "at://did:plc:fixture/site.standard.publication/3publication",
+  "author": "at://did:plc:fixture/app.bsky.actor.profile/self",
+  "me": "at://did:plc:fixture/app.bsky.actor.profile/self"
+}

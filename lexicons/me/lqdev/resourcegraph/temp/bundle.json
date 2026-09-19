@@ -1,0 +1,37 @@
+{
+  "lexicon": 1,
+  "id": "me.lqdev.resourcegraph.temp.bundle",
+  "description": "Draft incubation record for an ordered AT Resource Graph bundle.",
+  "defs": {
+    "main": {
+      "type": "record",
+      "description": "A user-authored collection whose memberships are inline and ordered.",
+      "key": "tid",
+      "record": {
+        "type": "object",
+        "required": [
+          "name",
+          "members"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxGraphemes": 256
+          },
+          "description": {
+            "type": "string",
+            "maxGraphemes": 2000
+          },
+          "members": {
+            "type": "array",
+            "maxLength": 1000,
+            "items": {
+              "type": "ref",
+              "ref": "me.lqdev.resourcegraph.temp.defs#membership"
+            }
+          }
+        }
+      }
+    }
+  }
+}

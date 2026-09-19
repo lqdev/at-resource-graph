@@ -1,0 +1,16 @@
+{
+  "$type": "me.lqdev.resourcegraph.temp.bundle",
+  "name": "Synthetic reading list",
+  "description": "A minimal draft bundle with one ordinary RSS input.",
+  "members": [
+    {
+      "position": 0,
+      "resource": {
+        "$type": "me.lqdev.resourcegraph.temp.defs#syndicationRef",
+        "uri": "https://example.test/feeds/reading.xml",
+        "format": "rss",
+        "title": "Example reading feed"
+      }
+    }
+  ]
+}

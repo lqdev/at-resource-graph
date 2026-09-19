@@ -1,0 +1,21 @@
+{
+  "status": "placeholder",
+  "version": 1,
+  "fixtures": [
+    {
+      "id": "minimal-bundle",
+      "path": "../../../examples/valid/minimal-bundle.json",
+      "expected": "syntax-valid"
+    },
+    {
+      "id": "nested-bundle",
+      "path": "../../../examples/valid/nested-bundle.json",
+      "expected": "syntax-valid"
+    },
+    {
+      "id": "missing-position",
+      "path": "../../../examples/invalid/missing-position.json",
+      "expected": "schema-invalid"
+    }
+  ]
+}

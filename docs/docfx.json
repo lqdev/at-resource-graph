@@ -1,0 +1,42 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "**/*.md"
+          ],
+          "src": "."
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "!_site/**"
+        ],
+        "src": "."
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "src": "."
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "AT Resource Graph",
+      "_appFooter": "AT Resource Graph draft documentation"
+    },
+    "template": [
+      "default"
+    ],
+    "dest": "_site"
+  }
+}

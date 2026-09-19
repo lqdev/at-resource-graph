@@ -1,0 +1,105 @@
+{
+  "lexicon": 1,
+  "id": "me.lqdev.resourcegraph.temp.defs",
+  "description": "Draft incubation definitions for AT Resource Graph references.",
+  "defs": {
+    "syndicationRef": {
+      "type": "object",
+      "description": "A reference to an RSS or Atom feed.",
+      "required": [
+        "uri",
+        "format"
+      ],
+      "properties": {
+        "uri": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "rss",
+            "atom"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "maxGraphemes": 256
+        }
+      }
+    },
+    "atRecordRef": {
+      "type": "object",
+      "description": "A reference to an AT Protocol record.",
+      "required": [
+        "uri"
+      ],
+      "properties": {
+        "uri": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "cid": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "title": {
+          "type": "string",
+          "maxGraphemes": 256
+        }
+      }
+    },
+    "bundleRef": {
+      "type": "object",
+      "description": "A reference to another resource bundle.",
+      "required": [
+        "uri"
+      ],
+      "properties": {
+        "uri": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "live",
+            "frozen"
+          ],
+          "default": "live"
+        },
+        "title": {
+          "type": "string",
+          "maxGraphemes": 256
+        }
+      }
+    },
+    "membership": {
+      "type": "object",
+      "description": "An inline, ordered edge from a bundle to one resource.",
+      "required": [
+        "position",
+        "resource"
+      ],
+      "properties": {
+        "position": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000
+        },
+        "resource": {
+          "type": "union",
+          "refs": [
+            "#syndicationRef",
+            "#atRecordRef",
+            "#bundleRef"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "maxGraphemes": 256
+        }
+      }
+    }
+  }
+}

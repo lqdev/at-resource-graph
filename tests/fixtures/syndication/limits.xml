@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Limit fixture</title>
+    <item><guid>1</guid><title>One</title></item>
+    <item><guid>2</guid><title>Two</title></item>
+    <item><guid>3</guid><title>Three</title></item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:yt="http://www.youtube.com/xml/schemas/2015">
+  <channel>
+    <title>Fixture RSS</title>
+    <link>https://example.test/</link>
+    <description>RSS fixture</description>
+    <media:rating>safe</media:rating>
+    <item>
+      <guid>rss-item-1</guid>
+      <title>First item</title>
+      <link>https://example.test/items/1</link>
+      <description>First description</description>
+      <pubDate>Tue, 19 Sep 2026 12:00:00 GMT</pubDate>
+      <enclosure url="https://cdn.example.test/audio/1.mp3" type="audio/mpeg" length="1234" />
+      <itunes:duration>00:42:00</itunes:duration>
+      <media:content url="https://cdn.example.test/video/1.mp4" type="video/mp4" fileSize="4567" />
+      <yt:videoId>fixture-video-1</yt:videoId>
+    </item>
+  </channel>
+</rss>

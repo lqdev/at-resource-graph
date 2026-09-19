@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:media="http://search.yahoo.com/mrss/">
+  <id>https://example.test/atom</id>
+  <title>Fixture Atom</title>
+  <link rel="alternate" href="https://example.test/atom" />
+  <subtitle>Atom fixture</subtitle>
+  <entry>
+    <id>https://example.test/atom/items/1</id>
+    <title>Atom item</title>
+    <link rel="alternate" href="https://example.test/atom/items/1" />
+    <link rel="enclosure" href="https://cdn.example.test/audio/atom.mp3" type="audio/mpeg" length="2048" />
+    <summary>Atom summary</summary>
+    <published>2026-09-19T12:00:00Z</published>
+    <updated>2026-09-19T12:30:00Z</updated>
+    <media:thumbnail url="https://cdn.example.test/images/atom.jpg" />
+  </entry>
+</feed>
