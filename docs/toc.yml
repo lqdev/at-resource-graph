@@ -1,24 +1,28 @@
 - name: Home
   href: index.md
 - name: Get started
+  dropdown: true
   items:
   - name: Quickstart
     href: getting-started/quickstart.md
   - name: Editorial profile
     href: editorial-profile.md
 - name: Concepts
+  dropdown: true
   items:
   - name: Architecture
     href: concepts/architecture.md
   - name: Resource model
     href: concepts/resource-model.md
 - name: Protocol
+  dropdown: true
   items:
   - name: Draft wire format
     href: protocol/wire-format.md
   - name: Lexicons
     href: protocol/lexicons.md
 - name: Integrations
+  dropdown: true
   items:
   - name: RSS and Atom
     href: integrations/syndication.md
@@ -27,10 +31,12 @@
   - name: OPML
     href: integrations/opml.md
 - name: Operations
+  dropdown: true
   items:
   - name: Security and limits
     href: operations/security.md
 - name: Interoperability
+  dropdown: true
   items:
   - name: Overview
     href: interoperability/index.md
@@ -39,6 +45,7 @@
   - name: TypeScript
     href: interoperability/typescript.md
 - name: Reference
+  dropdown: true
   items:
   - name: Reference index
     href: reference/index.md
