@@ -26,6 +26,8 @@ jobs:
           dotnet-version: 10.0.401
       - name: Restore pinned DocFX tool
         run: dotnet tool restore --tool-manifest .config/dotnet-tools.json
+      - name: Restore solution for API metadata
+        run: dotnet restore ResourceGraph.sln
       - name: Build documentation
         run: dotnet tool run docfx docs/docfx.json
       - name: Upload Pages artifact

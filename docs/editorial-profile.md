@@ -23,3 +23,6 @@ Authors SHOULD avoid:
 The specification uses uppercase requirement terms only when a rule is
 normative. Narrative text may describe intent without creating a protocol
 requirement.
+
+Task pages use the same profile. They explain the shortest safe path first and
+link to canonical specifications when a reader needs normative detail.

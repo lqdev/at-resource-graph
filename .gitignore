@@ -8,4 +8,5 @@ TestResults/
 .idea/
 
 ## DocFX output
+docs/api/
 docs/_site/

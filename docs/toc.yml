@@ -1,0 +1,54 @@
+- name: Home
+  href: index.md
+- name: Get started
+  items:
+  - name: Quickstart
+    href: getting-started/quickstart.md
+  - name: Editorial profile
+    href: editorial-profile.md
+- name: Concepts
+  items:
+  - name: Architecture
+    href: concepts/architecture.md
+  - name: Resource model
+    href: concepts/resource-model.md
+- name: Protocol
+  items:
+  - name: Draft wire format
+    href: protocol/wire-format.md
+  - name: Lexicons
+    href: protocol/lexicons.md
+- name: Integrations
+  items:
+  - name: RSS and Atom
+    href: integrations/syndication.md
+  - name: AT records
+    href: integrations/at-records.md
+  - name: OPML
+    href: integrations/opml.md
+- name: Operations
+  items:
+  - name: Security and limits
+    href: operations/security.md
+- name: Interoperability
+  items:
+  - name: Overview
+    href: interoperability/index.md
+  - name: .NET
+    href: interoperability/dotnet.md
+  - name: TypeScript
+    href: interoperability/typescript.md
+- name: Reference
+  items:
+  - name: Reference index
+    href: reference/index.md
+  - name: CLI
+    href: reference/cli.md
+  - name: .NET API
+    href: reference/api.md
+  - name: Specifications
+    href: reference/specifications.md
+  - name: Examples and fixtures
+    href: reference/examples.md
+  - name: Conformance
+    href: reference/conformance.md

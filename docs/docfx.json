@@ -3,40 +3,122 @@
     {
       "src": [
         {
+          "src": "../src",
           "files": [
-            "**/*.md"
+            "**/*.csproj"
           ],
-          "src": "."
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
         }
       ],
-      "dest": "api"
+      "dest": "api",
+      "noRestore": false
     }
   ],
   "build": {
     "content": [
       {
+        "src": ".",
         "files": [
           "**/*.md",
+          "toc.yml",
           "!_site/**"
         ],
-        "src": "."
+        "dest": "."
+      },
+      {
+        "src": "../specs",
+        "files": [
+          "*.md"
+        ],
+        "dest": "specs"
+      },
+      {
+        "src": "../specs/conformance",
+        "files": [
+          "README.md"
+        ],
+        "dest": "specs/conformance"
+      },
+      {
+        "src": "..",
+        "files": [
+          "README.md",
+          "SECURITY.md",
+          "GOVERNANCE.md",
+          "CONTRIBUTING.md",
+          "CHANGELOG.md"
+        ],
+        "dest": "."
+      },
+      {
+        "src": "../lexicons",
+        "files": [
+          "README.md"
+        ],
+        "dest": "lexicons"
+      },
+      {
+        "src": "../examples",
+        "files": [
+          "README.md"
+        ],
+        "dest": "examples"
+      },
+      {
+        "src": "api",
+        "files": [
+          "**/*.yml",
+          "**/toc.yml"
+        ],
+        "dest": "api"
       }
     ],
     "resource": [
       {
+        "src": "../examples",
         "files": [
-          "images/**"
+          "**/*.json"
         ],
-        "src": "."
+        "dest": "examples"
+      },
+      {
+        "src": "../lexicons",
+        "files": [
+          "**/*.json"
+        ],
+        "dest": "lexicons"
+      },
+      {
+        "src": "../tests/fixtures",
+        "files": [
+          "**/*.xml",
+          "**/*.html",
+          "**/*.json",
+          "**/*.opml"
+        ],
+        "dest": "fixtures"
       }
     ],
     "globalMetadata": {
       "_appTitle": "AT Resource Graph",
-      "_appFooter": "AT Resource Graph draft documentation"
+      "_appName": "AT Resource Graph",
+      "_appFooter": "AT Resource Graph draft documentation",
+      "_enableSearch": true,
+      "_gitContribute": {
+        "repo": "https://github.com/lqdev/at-resource-graph",
+        "branch": "main"
+      }
     },
     "template": [
       "default"
     ],
     "dest": "_site"
+  },
+  "rules": {
+    "InvalidHref": "warning",
+    "UnknownContentType": "info"
   }
 }
