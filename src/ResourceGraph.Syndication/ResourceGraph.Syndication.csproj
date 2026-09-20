@@ -4,6 +4,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Description>Bounded RSS and Atom parsing into the normalized ResourceGraph syndication model.</Description>
   </PropertyGroup>
 
   <ItemGroup>

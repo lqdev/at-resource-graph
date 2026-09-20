@@ -4,6 +4,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Description>Bluesky post and profile projections over ResourceGraph AT Protocol records and feeds.</Description>
   </PropertyGroup>
 
   <ItemGroup>

@@ -7,9 +7,34 @@
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <AnalysisLevel>latest-recommended</AnalysisLevel>
     <RepositoryUrl>https://github.com/lqdev/at-resource-graph</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <Authors Condition="'$(Authors)' == ''">lqdev</Authors>
+    <Company Condition="'$(Company)' == ''">lqdev</Company>
+    <PackageTags Condition="'$(PackageTags)' == ''">resourcegraph;atprotocol;bluesky;rss;atom;opml;dotnet;net10</PackageTags>
+    <PackageLicenseFile Condition="'$(PackageLicenseFile)' == ''">LICENSE</PackageLicenseFile>
+    <PackageReadmeFile Condition="'$(PackageReadmeFile)' == ''">PackageReadme.md</PackageReadmeFile>
+    <ResourceGraphVersion Condition="'$(ResourceGraphVersion)' == ''">0.1.0-preview.1</ResourceGraphVersion>
+    <Version Condition="'$(Version)' == ''">$(ResourceGraphVersion)</Version>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">$(ResourceGraphVersion)</PackageVersion>
+    <IsPackable Condition="'$(IsPackable)' == ''">false</IsPackable>
     <GenerateDocumentationFile Condition="'$(IsTestProject)' != 'true'">true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(IsPackable)' == 'true'">
+    <PackageId Condition="'$(PackageId)' == ''">$(MSBuildProjectName)</PackageId>
+    <Description Condition="'$(Description)' == ''">Reusable ResourceGraph library for .NET.</Description>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(IsPackable)' == 'true'">
+    <None Include="$(MSBuildThisFileDirectory)PackageReadme.md"
+          Link="PackageReadme.md"
+          Pack="true"
+          PackagePath="\" />
+    <None Include="$(MSBuildThisFileDirectory)LICENSE"
+          Link="LICENSE"
+          Pack="true"
+          PackagePath="\" />
+  </ItemGroup>
 
   <PropertyGroup Condition="'$(OutputType)' == 'Exe'">
     <InvariantGlobalization>true</InvariantGlobalization>
