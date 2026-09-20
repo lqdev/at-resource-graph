@@ -2,9 +2,8 @@
 
 AT Resource Graph is a standalone .NET 10 project for composing protocol-aware
 resource collections from AT Protocol records, RSS/Atom feeds, websites, and
-nested bundles. The future public repository is planned as
-`github.com/lqdev/at-resource-graph`; this checkout does not create or contact
-that remote repository.
+nested bundles. Reusable libraries are published as immutable preview packages
+to `github.com/lqdev/at-resource-graph`.
 
 ## Bootstrap status
 
@@ -58,6 +57,16 @@ dotnet test tests/ResourceGraph.Bootstrap.Tests/ResourceGraph.Bootstrap.Tests.cs
 
 The examples use synthetic URLs and identities. Tests do not call external
 feeds or AT services.
+
+## Reusable packages
+
+The reusable libraries are published to GitHub Packages as
+`ResourceGraph.Core`, `ResourceGraph.AtProto`, `ResourceGraph.Syndication`,
+`ResourceGraph.Discovery`, `ResourceGraph.StandardSite`, `ResourceGraph.Bluesky`,
+`ResourceGraph.Composition`, `ResourceGraph.Opml`, and `ResourceGraph.AppView`.
+The initial version is `0.1.0-preview.1`. See
+[ResourceGraph package consumption and publishing](docs/getting-started/packages.md)
+for exact authentication, restore, AppView sample, and release commands.
 
 The first executable offline slice is available through
 `ResourceGraph.Cli`:

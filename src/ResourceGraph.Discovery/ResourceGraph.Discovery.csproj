@@ -4,6 +4,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Description>Safe HTML head metadata discovery primitives for ResourceGraph integrations.</Description>
   </PropertyGroup>
 
   <ItemGroup>
